@@ -1,0 +1,84 @@
+
+GET  http://localhost:3011/alluser/
+###
+GET http://localhost:3011/allfollower/
+###
+GET http://localhost:3011/alltweet/
+###
+GET http://localhost:3011/allreply/
+###
+GET http://localhost:3011/alllike/
+###
+
+POST http://localhost:3011/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+//API 2
+
+POST http://localhost:3011/login/
+Content-Type: application/json
+
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+//API 3
+GET http://localhost:3011/user/tweets/feed/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcxMDM3MzY5fQ.7tjMMc2liOzXAsieHdBOgONpmTFMfkCZhvqpC00PitU
+
+###
+//API 4
+GET http://localhost:3011/user/following/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNjcxMDgxMzE5fQ.80iqqUjXR-1mXMdOOzU7LvdZ0WMqfs1_zD8jOSdZLLk
+
+###
+//API 5
+GET http://localhost:3011/user/followers/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNjcxMDgxMzE5fQ.80iqqUjXR-1mXMdOOzU7LvdZ0WMqfs1_zD8jOSdZLLk
+
+###
+//API 6
+GET http://localhost:3011/tweets/1/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNjcxMDgxMzE5fQ.80iqqUjXR-1mXMdOOzU7LvdZ0WMqfs1_zD8jOSdZLLk
+
+###
+//API 7
+GET http://localhost:3011/tweets/1/likes/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNjcxMDgxMzE5fQ.80iqqUjXR-1mXMdOOzU7LvdZ0WMqfs1_zD8jOSdZLLk
+
+###
+//API 8
+GET http://localhost:3011/tweets/2/replies/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNjcxMDgxMzE5fQ.80iqqUjXR-1mXMdOOzU7LvdZ0WMqfs1_zD8jOSdZLLk
+
+###
+//API 9
+GET http://localhost:3011/user/tweets/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNjcxMDgxMzE5fQ.80iqqUjXR-1mXMdOOzU7LvdZ0WMqfs1_zD8jOSdZLLk
+
+###
+//API 10
+POST http://localhost:3011/user/tweets/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNjcxMDgxMzE5fQ.80iqqUjXR-1mXMdOOzU7LvdZ0WMqfs1_zD8jOSdZLLk
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings...AMAN"
+}
+
+###
+//API 11
+
+DELETE http://localhost:3011/tweets/15/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNjcxMDgxMzE5fQ.80iqqUjXR-1mXMdOOzU7LvdZ0WMqfs1_zD8jOSdZLLk
